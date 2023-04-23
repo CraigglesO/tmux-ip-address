@@ -30,6 +30,6 @@ update_tmux_option() {
 
 main() {
   tmux bind-key "$ip_address_refresh_cmd_key" run-shell -b "$CURRENT_DIR/scripts/update_ip_address.sh"
-  update_tmux_option "status-right"
+  update_tmux_option "status-left"
 }
 main
